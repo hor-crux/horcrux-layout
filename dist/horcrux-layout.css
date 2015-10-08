@@ -93,6 +93,10 @@
   * /deep/ *[row-m],
   * /deep/ *[row-s] {
     flex-direction: column; }
+  * /deep/ *[show-l],
+  * /deep/ *[show-m],
+  * /deep/ *[show-s] {
+    display: none; }
   * /deep/ *[justify~="xs:start"] {
     justify-content: flex-start; }
   * /deep/ *[justify~="xs:end"] {
@@ -143,6 +147,11 @@
   * /deep/ *[row-m],
   * /deep/ *[row-s] {
     flex-direction: row; }
+  * /deep/ *[show-l],
+  * /deep/ *[show-m] {
+    display: none; }
+  * /deep/ *[hide-s] {
+    display: none; }
   * /deep/ *[justify~="s:start"] {
     justify-content: flex-start; }
   * /deep/ *[justify~="s:end"] {
@@ -191,6 +200,11 @@
   * /deep/ *[row-l],
   * /deep/ *[row-m] {
     flex-direction: row; }
+  * /deep/ *[show-l] {
+    display: none; }
+  * /deep/ *[hide-m],
+  * /deep/ *[hide-s] {
+    display: none; }
   * /deep/ *[justify~="m:start"] {
     justify-content: flex-start; }
   * /deep/ *[justify~="m:end"] {
@@ -236,6 +250,9 @@
 @media (min-width: 1080px) {
   * /deep/ *[row-l] {
     flex-direction: row; }
+  * /deep/ *[hide-m],
+  * /deep/ *[hide-s] {
+    display: none; }
   * /deep/ *[justify~="l:start"] {
     justify-content: flex-start; }
   * /deep/ *[justify~="l:end"] {
