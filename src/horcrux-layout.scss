@@ -126,8 +126,6 @@ $options: (
 		flex-direction: column;
 	}
 	
-	* /deep/ *[row-l],
-	* /deep/ *[row-m],
 	* /deep/ *[row-s] {
 		flex-direction: row;
 	}
@@ -168,7 +166,7 @@ $options: (
 		flex-direction: column;
 	}
 	
-	* /deep/ *[row-l],
+	* /deep/ *[row-s],
 	* /deep/ *[row-m] {
 		flex-direction: row;
 	}

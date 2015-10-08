@@ -143,8 +143,6 @@
   * /deep/ *[row-l],
   * /deep/ *[row-m] {
     flex-direction: column; }
-  * /deep/ *[row-l],
-  * /deep/ *[row-m],
   * /deep/ *[row-s] {
     flex-direction: row; }
   * /deep/ *[show-l],
@@ -199,7 +197,7 @@
 @media (min-width: 800px) {
   * /deep/ *[row-l] {
     flex-direction: column; }
-  * /deep/ *[row-l],
+  * /deep/ *[row-s],
   * /deep/ *[row-m] {
     flex-direction: row; }
   * /deep/ *[show-l] {
