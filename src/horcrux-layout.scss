@@ -1,0 +1,192 @@
+$container-types: column row row-s row-m row-l;
+
+$options: (
+	justify-content: (
+		alias: justify,
+		options: (
+			start: flex-start,
+			end: flex-end,
+			center: center,
+			around: space-around,
+			between: space-between
+		)
+	),
+	align-items: (
+		alias: align-items,
+		options: (
+			start: flex-start,
+			end: flex-end,
+			center: center,
+		)
+	),
+	align-self: (
+		alias: align-self,
+		options: (
+			start: flex-start,
+			end: flex-end,
+			center: center,
+		)
+	),
+	flex: (
+		alias: flex,
+		options: (
+			1: 1 0 auto,
+			2: 2 0 auto,
+			3: 3 0 auto,
+			4: 4 0 auto,
+			5: 5 0 auto,
+			6: 6 0 auto,
+			7: 7 0 auto,
+			8: 8 0 auto,			
+		)
+	)
+);
+
+/*
+	Options
+*/
+
+
+
+@each $optionName, $option in $options {
+	$alias: map-get($option, alias);
+	$optionValues: map-get($option, options);
+	
+	@each $name, $value in $optionValues {
+		
+		* /deep/ *[#{$alias}~="#{$name}"] {
+			#{$optionName}: #{$value};		
+		}
+	}
+
+}
+
+
+/*
+	Container general
+*/
+
+@each $container-type in $container-types {
+	* /deep/ *[#{$container-type}] {
+		display: flex;
+		
+	}
+}
+
+/*
+	Row
+*/
+
+/*
+	Column
+*/
+
+* /deep/ *[column] {
+	flex-direction: column;
+}
+
+
+/*
+	Size-XS
+*/
+@media(min-width: 0px) {
+	* /deep/ *[row-l],
+	* /deep/ *[row-m],
+	* /deep/ *[row-s] {
+		flex-direction: column;
+	}
+	
+	@each $optionName, $option in $options {
+		$alias: map-get($option, alias);
+		$optionValues: map-get($option, options);
+		
+		@each $name, $value in $optionValues {
+			
+			* /deep/ *[#{$alias}~="xs:#{$name}"] {
+				#{$optionName}: #{$value};
+			}
+		}
+
+	}
+}
+
+
+/*
+	Size-S
+*/
+@media(min-width: 480px) {
+	* /deep/ *[row-l],
+	* /deep/ *[row-m] {
+		flex-direction: column;
+	}
+	
+	* /deep/ *[row-l],
+	* /deep/ *[row-m],
+	* /deep/ *[row-s] {
+		flex-direction: row;
+	}
+	
+	@each $optionName, $option in $options {
+		$alias: map-get($option, alias);
+		$optionValues: map-get($option, options);
+		
+		@each $name, $value in $optionValues {
+			
+			* /deep/ *[#{$alias}~="s:#{$name}"] {
+				#{$optionName}: #{$value};
+			}
+		}
+
+	}
+}
+
+
+/*
+	Size-M
+*/
+@media(min-width:  800px) {
+	* /deep/ *[row-l] {
+		flex-direction: column;
+	}
+	
+	* /deep/ *[row-l],
+	* /deep/ *[row-m] {
+		flex-direction: row;
+	}
+	
+	@each $optionName, $option in $options {
+		$alias: map-get($option, alias);
+		$optionValues: map-get($option, options);
+		
+		@each $name, $value in $optionValues {
+			
+			* /deep/ *[#{$alias}~="m:#{$name}"] {
+				#{$optionName}: #{$value};
+			}
+		}
+
+	}
+}
+
+
+/*
+	Size-L
+*/
+@media(min-width: 1080px) {
+	* /deep/ *[row-l] {
+		flex-direction: row;
+	}
+	
+	@each $optionName, $option in $options {
+		$alias: map-get($option, alias);
+		$optionValues: map-get($option, options);
+		
+		@each $name, $value in $optionValues {
+			
+			* /deep/ *[#{$alias}~="l:#{$name}"] {
+				#{$optionName}: #{$value};
+			}
+		}
+
+	}
+}
