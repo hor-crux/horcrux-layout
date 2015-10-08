@@ -152,6 +152,8 @@
     display: none; }
   * /deep/ *[hide-s] {
     display: none; }
+  * /deep/ *[show-s] {
+    display: initial; }
   * /deep/ *[justify~="s:start"] {
     justify-content: flex-start; }
   * /deep/ *[justify~="s:end"] {
@@ -205,6 +207,9 @@
   * /deep/ *[hide-m],
   * /deep/ *[hide-s] {
     display: none; }
+  * /deep/ *[show-m],
+  * /deep/ *[show-s] {
+    display: initial; }
   * /deep/ *[justify~="m:start"] {
     justify-content: flex-start; }
   * /deep/ *[justify~="m:end"] {
@@ -253,6 +258,10 @@
   * /deep/ *[hide-m],
   * /deep/ *[hide-s] {
     display: none; }
+  * /deep/ *[show-l],
+  * /deep/ *[show-m],
+  * /deep/ *[show-s] {
+    display: initial; }
   * /deep/ *[justify~="l:start"] {
     justify-content: flex-start; }
   * /deep/ *[justify~="l:end"] {
