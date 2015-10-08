@@ -88,15 +88,20 @@
 /*
 	Size-XS
 */
+@media all and (min-width: 0px) and (max-width: 479px) {
+  * /deep/ *[show-l],
+  * /deep/ *[show-m],
+  * /deep/ *[show-s] {
+    display: none; } }
+
+/*
+	Size-XS and above
+*/
 @media (min-width: 0px) {
   * /deep/ *[row-l],
   * /deep/ *[row-m],
   * /deep/ *[row-s] {
     flex-direction: column; }
-  * /deep/ *[show-l],
-  * /deep/ *[show-m],
-  * /deep/ *[show-s] {
-    display: none; }
   * /deep/ *[justify~="xs:start"] {
     justify-content: flex-start; }
   * /deep/ *[justify~="xs:end"] {
@@ -139,19 +144,22 @@
 /*
 	Size-S
 */
+@media all and (min-width: 480px) and (max-width: 799px) {
+  * /deep/ *[show-l],
+  * /deep/ *[show-m] {
+    display: none; }
+  * /deep/ *[hide-s] {
+    display: none; } }
+
+/*
+	Size-S and above
+*/
 @media (min-width: 480px) {
   * /deep/ *[row-l],
   * /deep/ *[row-m] {
     flex-direction: column; }
   * /deep/ *[row-s] {
     flex-direction: row; }
-  * /deep/ *[show-l],
-  * /deep/ *[show-m] {
-    display: none; }
-  * /deep/ *[hide-s] {
-    display: none; }
-  * /deep/ *[show-s] {
-    display: initial; }
   * /deep/ *[justify~="s:start"] {
     justify-content: flex-start; }
   * /deep/ *[justify~="s:end"] {
@@ -194,20 +202,22 @@
 /*
 	Size-M
 */
+@media all and (min-width: 800px) and (max-width: 1079px) {
+  * /deep/ *[show-l] {
+    display: none; }
+  * /deep/ *[hide-m],
+  * /deep/ *[hide-s] {
+    display: none; } }
+
+/*
+	Size-M and above
+*/
 @media (min-width: 800px) {
   * /deep/ *[row-l] {
     flex-direction: column; }
   * /deep/ *[row-s],
   * /deep/ *[row-m] {
     flex-direction: row; }
-  * /deep/ *[show-l] {
-    display: none; }
-  * /deep/ *[hide-m],
-  * /deep/ *[hide-s] {
-    display: none; }
-  * /deep/ *[show-m],
-  * /deep/ *[show-s] {
-    display: initial; }
   * /deep/ *[justify~="m:start"] {
     justify-content: flex-start; }
   * /deep/ *[justify~="m:end"] {
@@ -253,13 +263,10 @@
 @media (min-width: 1080px) {
   * /deep/ *[row-l] {
     flex-direction: row; }
+  * /deep/ *[hide-l],
   * /deep/ *[hide-m],
   * /deep/ *[hide-s] {
     display: none; }
-  * /deep/ *[show-l],
-  * /deep/ *[show-m],
-  * /deep/ *[show-s] {
-    display: initial; }
   * /deep/ *[justify~="l:start"] {
     justify-content: flex-start; }
   * /deep/ *[justify~="l:end"] {
