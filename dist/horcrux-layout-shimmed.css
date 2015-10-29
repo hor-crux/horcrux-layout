@@ -25,6 +25,9 @@
 *[align-items~="center"] {
   align-items: center; }
 
+*[align-items~="baseline"] {
+  align-items: basline; }
+
 *[align-self~="start"] {
   align-self: flex-start; }
 
@@ -142,6 +145,8 @@
     align-items: flex-end; }
   *[align-items~="xs:center"] {
     align-items: center; }
+  *[align-items~="xs:baseline"] {
+    align-items: basline; }
   *[align-self~="xs:start"] {
     align-self: flex-start; }
   *[align-self~="xs:end"] {
@@ -216,6 +221,8 @@
     align-items: flex-end; }
   *[align-items~="s:center"] {
     align-items: center; }
+  *[align-items~="s:baseline"] {
+    align-items: basline; }
   *[align-self~="s:start"] {
     align-self: flex-start; }
   *[align-self~="s:end"] {
@@ -290,6 +297,8 @@
     align-items: flex-end; }
   *[align-items~="m:center"] {
     align-items: center; }
+  *[align-items~="m:baseline"] {
+    align-items: basline; }
   *[align-self~="m:start"] {
     align-self: flex-start; }
   *[align-self~="m:end"] {
@@ -355,6 +364,8 @@
     align-items: flex-end; }
   *[align-items~="l:center"] {
     align-items: center; }
+  *[align-items~="l:baseline"] {
+    align-items: basline; }
   *[align-self~="l:start"] {
     align-self: flex-start; }
   *[align-self~="l:end"] {
