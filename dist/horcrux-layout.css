@@ -26,7 +26,7 @@
   align-items: center; }
 
 * /deep/ *[align-items~="baseline"] {
-  align-items: basline; }
+  align-items: baseline; }
 
 * /deep/ *[align-self~="start"] {
   align-self: flex-start; }
@@ -146,7 +146,7 @@
   * /deep/ *[align-items~="xs:center"] {
     align-items: center; }
   * /deep/ *[align-items~="xs:baseline"] {
-    align-items: basline; }
+    align-items: baseline; }
   * /deep/ *[align-self~="xs:start"] {
     align-self: flex-start; }
   * /deep/ *[align-self~="xs:end"] {
@@ -222,7 +222,7 @@
   * /deep/ *[align-items~="s:center"] {
     align-items: center; }
   * /deep/ *[align-items~="s:baseline"] {
-    align-items: basline; }
+    align-items: baseline; }
   * /deep/ *[align-self~="s:start"] {
     align-self: flex-start; }
   * /deep/ *[align-self~="s:end"] {
@@ -298,7 +298,7 @@
   * /deep/ *[align-items~="m:center"] {
     align-items: center; }
   * /deep/ *[align-items~="m:baseline"] {
-    align-items: basline; }
+    align-items: baseline; }
   * /deep/ *[align-self~="m:start"] {
     align-self: flex-start; }
   * /deep/ *[align-self~="m:end"] {
@@ -365,7 +365,7 @@
   * /deep/ *[align-items~="l:center"] {
     align-items: center; }
   * /deep/ *[align-items~="l:baseline"] {
-    align-items: basline; }
+    align-items: baseline; }
   * /deep/ *[align-self~="l:start"] {
     align-self: flex-start; }
   * /deep/ *[align-self~="l:end"] {
